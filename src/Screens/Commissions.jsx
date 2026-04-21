@@ -1,6 +1,5 @@
 import React from 'react'
 import './Commissions.css';
-import { Container } from 'react-bootstrap';
 
 function Commissions() {
   return (
