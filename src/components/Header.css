@@ -1,0 +1,35 @@
+.navbar{
+    position: fixed;
+    height: 5vh;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    align-items: center;
+}
+
+.navbar .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2f3d;
+}
+
+.logo-nav {
+    font-family: 'Pixelify Sans';
+    font-size: 3.5vh;
+    font-weight: 700;
+    font-style: italic;
+    color: #c4e4fe;
+    text-decoration: none;
+    margin: 0 2vh;
+}
+
+.nav-link {
+    font-family: 'Pixelify Sans';
+    font-size: 2.5vh;
+    color: #c4e4fe;
+    text-decoration: none;
+    margin: 0 1vh 0 1vh;
+    display: flex;
+}

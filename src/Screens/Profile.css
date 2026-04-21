@@ -1,0 +1,49 @@
+.profile {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 5vh;
+    align-items: center;
+}
+
+.profile .card {
+    background-color: #2e2f3d;
+    border: none;
+    color: white;
+    font-family: 'Times New Roman';
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: calc(1.5vw + 1.5vh);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+
+#profile {
+    opacity: 0;
+    transform: translateX(-20%);
+}
+
+#profile.slide-in {
+    animation: slideInLeft 0.5s ease-in-out forwards;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.profile-image {
+    width: calc(20% + 100px);
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
