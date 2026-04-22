@@ -10,7 +10,7 @@
     border: none;
     color: white;
     font-family: 'Times New Roman';
-    font-size: 1.5rem;
+    font-size: calc(1vw + 5px);
     margin-top: 20px;
     padding: calc(1.5vw + 1.5vh);
     display: flex;
@@ -19,6 +19,24 @@
     text-align: center;
     padding-left: 15vw;
     padding-right: 15vw;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.soc-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: calc(0.8vw + 8px);
+    font-family: 'Pixelify Sans';
+    background-color: #1d1d29;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 #profile {
@@ -46,4 +64,12 @@
     height: auto;
     border-radius: 50%;
     margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
 }

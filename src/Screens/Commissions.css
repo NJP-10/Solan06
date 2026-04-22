@@ -15,10 +15,22 @@
     position: fixed;
     bottom: 5vh;
     right: 5vw;
-    width: 15vw;
+    width: calc(15vw + 50px);
     height: auto;
     z-index: 600;
     animation: fadeIn 0.3s ease-in-out;
+}
+
+.close-button {
+    color: #c4e4fe;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 3.5rem;
+    font-family: 'Pixelify Sans';
+    position: absolute;
+    top: 5vh;
+    right: 5vw;
 }
 
 @keyframes fadeIn {

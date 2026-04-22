@@ -34,7 +34,7 @@ function Gallery() {
         <PortfolioIcon className="portfolio-image" />
         <Row className='gallery-row'>
           {gallery.map((item) => (
-            <Col key={item._id} xs={12} md={6} lg={4} className='gallery-col'>
+            <Col key={item._id} className='gallery-col'>
               <Card className='gallery-card'>
                 <img src={item.image} alt={item.category} className='gallery-image' onClick={() => handleImageClick(item.image)} />
               </Card>

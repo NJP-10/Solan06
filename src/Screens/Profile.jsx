@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import {Container, Row, Col, Card} from 'react-bootstrap'
+import {Container, Row, Card, Col} from 'react-bootstrap'
 import './Profile.css'
 
 function Profile() {
@@ -8,8 +8,6 @@ function Profile() {
   return (
     <div className='profile'>
       <Container>
-        <Row>
-          <Col>
             <Card ref={cardRef} className='profile-card'>
               <Card.Img src="../gif/pfp.gif" alt="Profile" className="profile-image" />
               <Card.Body>
@@ -18,16 +16,18 @@ function Profile() {
                   <p>Hi 🐐 im SoLAN, a goat living inside your computer</p>
                   <p>I am an illustrator focusing in character art and design with bold lighting, texture, and color!</p>
                 </Card.Text>
-                <Card.Link>
-                  <a href="https://www.instagram.com/so.lan06/" target="_blank" rel="noopener noreferrer">instagram</a>
-                  <a href="https://x.com/so_lan06?s=21" target="_blank" rel="noopener noreferrer">twitter</a>
-                  <a href="https://www.tiktok.com/@so.lan06" target="_blank" rel="noopener noreferrer">tiktok</a>
-                  <a href="https://vgen.co/so_lan06" target="_blank" rel="noopener noreferrer">vgen</a>
-                </Card.Link>
+                <Row className="links-row">
+                  <Col className='links-col'>
+                    <Card.Text className='links'>
+                      <a href="https://www.instagram.com/so.lan06/" target="_blank" rel="noopener noreferrer" className="soc-link">instagram</a>
+                      <a href="https://x.com/so_lan06?s=21" target="_blank" rel="noopener noreferrer" className="soc-link">twitter</a>
+                      <a href="https://www.tiktok.com/@so.lan06" target="_blank" rel="noopener noreferrer" className="soc-link">tiktok</a>
+                      <a href="https://vgen.co/so_lan06" target="_blank" rel="noopener noreferrer" className="soc-link">vgen</a>
+                    </Card.Text>
+                  </Col>
+                </Row>
               </Card.Body>
             </Card>
-          </Col>
-        </Row>
       </Container>
     </div>
   )
