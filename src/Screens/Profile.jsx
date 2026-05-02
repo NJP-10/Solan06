@@ -9,7 +9,7 @@ function Profile() {
     <div className='profile'>
       <Container>
             <Card ref={cardRef} className='profile-card'>
-              <Card.Img src="../gif/pfp.gif" alt="Profile" className="profile-image" />
+              <img src="../gif/pfp.gif" alt="Profile" className="profile-image" />
               <Card.Body>
                 <Card.Title><strong>So.Lan06</strong></Card.Title>
                 <Card.Text>
