@@ -14,7 +14,7 @@
 
   background-image: 
     linear-gradient(to top, rgba(0,0,0,var(--grad-opacity, 0)), transparent),
-    url('../public/gif/thorns.png');
+    url('../public/images/bg.png');
 
   background-size: cover;
   background-position: center;
