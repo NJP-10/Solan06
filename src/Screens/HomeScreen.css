@@ -40,3 +40,16 @@
     position: absolute;
     transform: translate(-140%, -50%);
 }
+
+@media screen and (max-width: 600px) {
+    .portfolio-image {
+        width: calc(75vw + 70px);
+        transform: translate(-3%, 7%);
+    }
+
+    .name-svg {
+        width: calc(15vw +  50px);
+        position: absolute;
+        transform: translate(-95%, -50%);
+    }    
+}
