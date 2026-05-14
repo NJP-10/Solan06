@@ -12,10 +12,7 @@
   height: 100%;
   z-index: -1;
 
-  background-image: 
-    linear-gradient(to top, rgba(0,0,0,var(--grad-opacity, 0)), transparent),
-    url('../public/images/bg.png');
-
+  background-color: #0a111a;
   background-size: cover;
   background-position: center;
 }

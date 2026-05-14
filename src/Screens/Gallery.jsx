@@ -4,7 +4,7 @@ import { Row, Col, Card, Container} from 'react-bootstrap'
 import gallery from '../Gallery'
 import Commissions from './Commissions'
 import ImgPopup from '../components/ImgPopup'
-import { ReactComponent as PortfolioIcon } from './portfolio.svg';
+import { ReactComponent as Gallerysvg } from './gallery.svg';
 
 function Gallery() {
   const [showCommissions, setShowCommissions] = useState(false);
@@ -31,7 +31,7 @@ function Gallery() {
   return (
     <div className='gallery'>
       <Container className='gallery-container'>
-        <PortfolioIcon className="portfolio-image" />
+        <Gallerysvg className="gallery-svg" />
         <Row className='gallery-row'>
           {gallery.map((item) => (
             <Col key={item._id} className='gallery-col'>

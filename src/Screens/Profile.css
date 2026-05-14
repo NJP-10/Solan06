@@ -4,7 +4,6 @@
     padding-top: 5vh;
     padding-bottom: 10vh;
     align-items: center;
-    background-color: #d0cef3;
 }
 
 .profile .card {
@@ -43,21 +42,21 @@
 
 #profile {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateY(20%);
 }
 
 #profile.slide-in {
-    animation: slideInLeft 0.5s ease-in-out forwards;
+    animation: slideInUp 0.5s ease-in-out forwards;
 }
 
-@keyframes slideInLeft {
+@keyframes slideInUp {
   from {
     opacity: 0;
-    transform: translateX(-20%);
+    transform: translateY(20%);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 

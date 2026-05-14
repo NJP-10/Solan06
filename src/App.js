@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
 import HomeScreen from "./Screens/HomeScreen";
 import './App.css';
 import Gallery from "./Screens/Gallery";
@@ -53,7 +52,6 @@ function App() {
   
   return (
     <div className='background'>
-      <Header />
       <div id="home" ref={homeRef}>
         <HomeScreen />
       </div>

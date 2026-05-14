@@ -69,10 +69,10 @@
     font-family: 'Pixelify Sans';
 }   
 
-.portfolio-image {
+.gallery-svg {
     display: block;
     margin:auto;
-    fill: #c4e4fe;
-    stroke: #c4e4fe;
+    fill: #bbd0ed;
+    stroke: #bbd0ed;
     width: calc(30vw + 100px);
 }
