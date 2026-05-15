@@ -6,7 +6,7 @@ import { ReactComponent as NameIcon } from './name.svg';
 function HomeScreen() {
   return (
     <div className='homescreen'>
-      <video autoPlay loop muted className='background-video'>
+      <video autoPlay loop muted playsInline className='background-video'>
         <source src="/bg.mp4" type="video/mp4" />
       </video>
         <div className='svg-container'>
