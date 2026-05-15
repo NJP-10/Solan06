@@ -7,7 +7,7 @@ function HomeScreen() {
   return (
     <div className='homescreen'>
       <video autoPlay loop muted playsInline className='background-video'>
-        <source src="/bg.mp4" type="video/mp4" />
+        <source src="/bg.webm" type="video/mp4" />
       </video>
         <div className='svg-container'>
           <PortfolioIcon className="portfolio-image" />
