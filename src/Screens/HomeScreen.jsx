@@ -6,12 +6,13 @@ import { ReactComponent as NameIcon } from './name.svg';
 function HomeScreen() {
   return (
     <div className='homescreen'>
-      <div className='bg-home'>
+      <video autoPlay loop muted className='background-video'>
+        <source src="/bg.mp4" type="video/mp4" />
+      </video>
         <div className='svg-container'>
           <PortfolioIcon className="portfolio-image" />
           <NameIcon className="name-svg" />
         </div>
-      </div>
     </div>
   )
 }

@@ -7,25 +7,7 @@ import Profile from "./Screens/Profile";
 
 
 function App() {
-  const homeRef = useRef(null);
   const profileRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!homeRef.current) return;
-
-      const { bottom } = homeRef.current.getBoundingClientRect();
-      const vh = window.innerHeight;
-
-      const progress = Math.min(Math.max((vh - bottom) / vh, 0), 1);
-
-      const opacity = progress * 0.7;
-      document.documentElement.style.setProperty("--grad-opacity", opacity);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     let hasSlideInTriggered = false;
@@ -52,7 +34,7 @@ function App() {
   
   return (
     <div className='background'>
-      <div id="home" ref={homeRef}>
+      <div id="home">
         <HomeScreen />
       </div>
       <div id="profile" ref={profileRef}>
