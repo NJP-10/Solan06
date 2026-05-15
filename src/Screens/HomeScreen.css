@@ -43,19 +43,19 @@
 }
 
 .portfolio-image {
-    fill: #e5edfa;
-    stroke: #e5edfa;
+    fill: #ffffff;
+    stroke: #ffffff;
     width: calc(75vw + 70px);
-    transform: translate(-7%, 7%);
+    transform: translate(0%, 7%);
     animation: fadeIn 4s ease forwards;
 }
 
 .name-svg {
-    fill: #e5edfa;
-    stroke: #e5edfa;
+    fill: #ffffff;
+    stroke: #ffffff;
     width: calc(15vw +  50px);
     position: absolute;
-    transform: translate(-140%, -50%);
+    transform: translate(-140%, -65%);
     animation: fadeIn 4s ease forwards;
 }
 
@@ -71,12 +71,12 @@
 @media screen and (max-width: 600px) {
     .portfolio-image {
         width: calc(75vw + 70px);
-        transform: translate(-3%, 7%);
+        transform: translate(0%, 7%);
     }
 
     .name-svg {
         width: calc(15vw +  50px);
         position: absolute;
-        transform: translate(-95%, -50%);
+        transform: translate(-100%, -50%);
     }    
 }
