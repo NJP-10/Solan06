@@ -32,6 +32,7 @@ function Gallery() {
     <div className='gallery'>
       <Container className='gallery-container'>
         <Gallerysvg className="gallery-svg" />
+        <div className='gallery-text'>Illustrations</div>
         <Row className='gallery-row'>
           {gallery.map((item) => (
             <Col key={item._id} className='gallery-col'>
@@ -41,6 +42,8 @@ function Gallery() {
             </Col>
           ))}
         </Row>
+        <div className='gallery-text'>Reference Sheet</div>
+        <img src="../images/refsheet.webp" alt="Reference Sheet" className='reference' onClick={() => handleImageClick("../images/refsheet.webp")} />
         <button className='comm-btn' onClick={handleCommissionClick}>
           commission info
         </button>

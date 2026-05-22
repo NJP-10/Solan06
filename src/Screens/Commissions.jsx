@@ -10,7 +10,7 @@ function Commissions(props) {
   return (
     <div className='commissions'>
       <img src="../gif/drawin.gif" alt="Drawin" className='drawin' />
-      kms
+      <img src="../images/comms.webp" alt="Commissions" className='commissions-image' />
     <button onClick={handleBackgroundClick} className='close-button'>x</button>
     {props.children}
     </div>

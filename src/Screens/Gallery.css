@@ -11,6 +11,14 @@
     padding-bottom: 5vh;
 }
 
+.gallery-text {
+    color: #e5edfa;
+    font-family: 'Michroma';
+    font-size: calc(1vw + 20px);
+    text-align: left;
+    margin-bottom: 4vh;
+}
+
 .gallery-row {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -75,4 +83,13 @@
     fill: #bbd0ed;
     stroke: #bbd0ed;
     width: calc(30vw + 100px);
+}
+
+.reference {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    cursor: pointer;
+    padding: 5vh;
 }
