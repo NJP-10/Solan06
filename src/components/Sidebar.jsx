@@ -1,51 +1,43 @@
-import { useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
+import {useState} from 'react'
 import './Sidebar.css'
+import Commissions from '../Screens/Commissions'
 
 function Sidebar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(false)
 
-  const { hasSchedule } = useSelector((state) => state.schedule);
-
-  const handleLogout = () => {
-    dispatch(logout());
-    navigate('/login');
-  };
-
-  const handleBack = () => {
-    closeSidebar();
-  };
+  const [showCommissions, setShowCommissions] = useState(false);
 
   const toggleSidebar = () => {
-    setIsOpen(!isOpen);
-  };
+    setIsOpen(!isOpen)
+  }
 
   const closeSidebar = () => {
+    setIsOpen(false)
+  }
+
+  const handleCommissionClick = () => {
+    setShowCommissions(true);
     setIsOpen(false);
   };
+  const handleCloseCommissions = () => {
+    setShowCommissions(false);
+  }
 
   return (
-    <>
-      <button className='hamburger-menu' onClick={toggleSidebar}>
+    <div>
+      <button className='hamburger' onClick={toggleSidebar}>
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-        <strong className="logo">BACON</strong>
-        <button className='sidebar-links back-button' onClick={handleBack}>← Back</button>
-        <button className='sidebar-links' onClick={closeSidebar} disabled={!hasSchedule}><Link to="/dashboard" className={!hasSchedule ? 'disabled-link' : ''}>To-Do</Link></button>
-        <button className='sidebar-links' onClick={closeSidebar} disabled={!hasSchedule}><Link to="/calendar" className={!hasSchedule ? 'disabled-link' : ''}>Calendar</Link></button>
-        <button className='sidebar-links' onClick={closeSidebar} disabled={!hasSchedule}><Link to="/schedule-overview" className={!hasSchedule ? 'disabled-link' : ''}>Schedule</Link></button>
-        <button className='sidebar-links' onClick={closeSidebar} disabled={!hasSchedule}><Link to="/folders" className={!hasSchedule ? 'disabled-link': ''}>Course Folders</Link></button>
-        <button className='sidebar-links' onClick={closeSidebar}><Link to="/shop">Shop</Link></button>
-        <button className='sidebar-links' onClick={closeSidebar}><Link to="/scan">Semester Scan</Link></button>
-        <button className='sidebar-links' onClick={closeSidebar}><Link to="/preferences">Preferences</Link></button>
-      </div>
-    </>
+    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+      <a href="#home" className='navlink' onClick={closeSidebar}>Home</a>
+      <a href="#profile" className='navlink' onClick={closeSidebar}>About me</a>
+      <a href="#gallery" className='navlink' onClick={closeSidebar}>Gallery</a>
+      <a href="#commissions" className='navlink' onClick={handleCommissionClick}>Commissions</a>
+    </div>
+    {showCommissions && <Commissions onClose={handleCloseCommissions} />}
+    </div>
   )
 }
 

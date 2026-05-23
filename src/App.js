@@ -4,6 +4,7 @@ import HomeScreen from "./Screens/HomeScreen";
 import './App.css';
 import Gallery from "./Screens/Gallery";
 import Profile from "./Screens/Profile";
+import Sidebar from "./components/Sidebar";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
   
   return (
     <div className='background'>
+      <Sidebar />
       <div id="home">
         <HomeScreen />
       </div>

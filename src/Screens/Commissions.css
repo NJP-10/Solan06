@@ -12,7 +12,7 @@
 }
 
 .commissions-image {
-    width: 60%;
+    width: calc(60% + 100px);
     height: auto;
     object-fit: cover;
     position: center top;
