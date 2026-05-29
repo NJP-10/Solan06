@@ -23,7 +23,8 @@
 }
 
 .links {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -38,6 +39,11 @@
     background-color: #1d1d29;
     padding: 10px 20px;
     border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.soc-link:hover {
+    transform: scale(1.05);
 }
 
 #profile {
@@ -84,7 +90,7 @@
     -moz-border-radius: 50%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
     .links {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

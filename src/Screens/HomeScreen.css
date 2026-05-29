@@ -26,6 +26,7 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    animation: fadeIn 4s ease forwards;
 }
 
 .portfolio-image {
@@ -33,7 +34,6 @@
     stroke: #ffffff;
     width: calc(75vw + 70px);
     transform: translate(0%, 7%);
-    animation: fadeIn 4s ease forwards;
 }
 
 .name-svg {
@@ -42,7 +42,39 @@
     width: calc(15vw +  50px);
     position: absolute;
     transform: translate(-140%, -65%);
+}
+
+.scroll{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    font-family: 'Pixelify Sans';
+    color: #ffffff;
+    z-index: 1;
+    gap: 10px;
     animation: fadeIn 4s ease forwards;
+}
+
+.scroll-text {
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+}
+
+.scroll-arrow {
+    font-size: 1.5rem;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
 }
 
 @keyframes fadeIn {

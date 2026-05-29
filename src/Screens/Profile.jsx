@@ -1,20 +1,18 @@
-import { useRef } from "react";
 import {Container, Row, Card, Col} from 'react-bootstrap'
 import './Profile.css'
 import AnimatedText from "../components/AnimatedText";
 
 function Profile() {
-  const cardRef = useRef(null);
 
   return (
     <div className='profile'>
       <Container>
-            <Card ref={cardRef} className='profile-card'>
+            <Card className='profile-card'>
               <div className='ratio'>
                 <img src="../gif/pfp.gif" alt="Profile" className="profile-image" />
               </div>
               <Card.Body>
-                <Card.Title><strong>About Me</strong></Card.Title>
+                <Card.Title><h3>About Me</h3></Card.Title>
                 <AnimatedText
                   text="Hi 🐐 im SoLAN, a goat living inside your computer"
                   characters="01x"
@@ -29,13 +27,14 @@ function Profile() {
                   sequential
                   useOriginalCharsOnly={false}
                 />
-                <Row className="links-row">
-                  <Col className='links-col'>
+                <Row>
+                  <Col>
                     <Card.Text className='links'>
                       <a href="https://www.instagram.com/so.lan06/" target="_blank" rel="noopener noreferrer" className="soc-link">instagram</a>
                       <a href="https://x.com/so_lan06?s=21" target="_blank" rel="noopener noreferrer" className="soc-link">twitter</a>
                       <a href="https://www.tiktok.com/@so.lan06" target="_blank" rel="noopener noreferrer" className="soc-link">tiktok</a>
                       <a href="https://vgen.co/so_lan06" target="_blank" rel="noopener noreferrer" className="soc-link">vgen</a>
+                      <a href="https://www.facebook.com/people/Solan06/61588795965582/" target="_blank" rel="noopener noreferrer" className="soc-link">facebook</a>
                     </Card.Text>
                   </Col>
                 </Row>
