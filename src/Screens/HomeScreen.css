@@ -33,7 +33,7 @@
     fill: #ffffff;
     stroke: #ffffff;
     width: calc(75vw + 70px);
-    transform: translate(0%, 7%);
+    transform: translate(0%, -10%);
 }
 
 .name-svg {
@@ -41,7 +41,7 @@
     stroke: #ffffff;
     width: calc(15vw +  50px);
     position: absolute;
-    transform: translate(-140%, -65%);
+    transform: translate(-140%, 65%);
 }
 
 .scroll{
@@ -86,15 +86,15 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .portfolio-image {
         width: calc(75vw + 70px);
-        transform: translate(0%, 7%);
+        transform: translate(0%, -10%);
     }
 
     .name-svg {
         width: calc(15vw +  50px);
         position: absolute;
-        transform: translate(-100%, -50%);
+        transform: translate(-100%, 60%);
     }    
 }
