@@ -55,6 +55,10 @@ const gallery = [
       '_id': '14',
       'image': '/images/14.webp',
     },
+    {
+      '_id': '15',
+      'image': '/images/15.webp',
+    },
   ]
   
   

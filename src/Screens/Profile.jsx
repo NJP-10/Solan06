@@ -34,7 +34,7 @@ function Profile() {
                       <a href="https://x.com/so_lan06?s=21" target="_blank" rel="noopener noreferrer" className="soc-link">twitter</a>
                       <a href="https://www.tiktok.com/@so.lan06" target="_blank" rel="noopener noreferrer" className="soc-link">tiktok</a>
                       <a href="https://vgen.co/so_lan06" target="_blank" rel="noopener noreferrer" className="soc-link">vgen</a>
-                      <a href="https://www.facebook.com/people/Solan06/61588795965582/" target="_blank" rel="noopener noreferrer" className="soc-link">facebook</a>
+                      <a href="https://www.facebook.com/so.lan006" target="_blank" rel="noopener noreferrer" className="soc-link">facebook</a>
                     </Card.Text>
                   </Col>
                 </Row>
