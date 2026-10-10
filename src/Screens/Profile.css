@@ -23,8 +23,8 @@
 }
 
 .links {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -40,8 +40,11 @@
     padding: 10px 20px;
     border-radius: 5px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
+    width: 150px;
+    box-sizing: border-box;
+    text-align: center;
+}
 .soc-link:hover {
     transform: scale(1.05);
 }
@@ -88,12 +91,4 @@
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-}
-
-@media (max-width: 680px) {
-    .links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
 }
